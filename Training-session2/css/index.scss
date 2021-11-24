@@ -4,6 +4,13 @@ body {
   background-color: #335a94;
 }
 
+#top-title {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+}
+
 // slick設定
 #slider {
   width: 100%;
@@ -205,5 +212,34 @@ body {
   }
   #score-area {
     margin: 20px;
+    font-size: 30px;
   }
+}
+
+#style-change {
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  h2 {
+    background-color: #fff;
+    border: solid 3px black;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+  }
+  #change {
+    height: 100px;
+  }
+}
+
+.cssBefore {
+  background-color: blue;
+  border: solid 2px black;
+}
+
+.cssAfter {
+  background-color: green;
+  border: solid 2px black;
 }

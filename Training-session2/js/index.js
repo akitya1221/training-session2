@@ -68,21 +68,20 @@ function butotnClick() {
   if (score == 5) {
     let scoreArea = document.getElementById("score-area");
     scoreArea.innerHTML = "満点です！";
-  } else if (score <= 4) {
+  } else if (score >= 4) {
     let scoreArea = document.getElementById("score-area");
     scoreArea.innerHTML = "惜しい！";
-  } else if (score <= 3) {
-    let scoreArea = document.getElementById("score-area");
-    scoreArea.innerHTML = "あともうちょっと！";
   } else {
     let scoreArea = document.getElementById("score-area");
     scoreArea.innerHTML = "がんばりましょう、、、";
   }
 
-
-
 };
 
-let checkButton = document.getElementById('checkButton');
-checkButton.addEventListener('click', butotnClick);
+let checkButton = document.getElementById("checkButton");
+checkButton.addEventListener("click", butotnClick);
 
+function cssChange() {
+  let change = document.getElementById("change");
+  change.className = "cssAfter";
+}
