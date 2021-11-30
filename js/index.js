@@ -67,13 +67,22 @@ function butotnClick() {
 
   if (score == 5) {
     let scoreArea = document.getElementById("score-area");
-    scoreArea.innerHTML = "満点です！";
-  } else if (score >= 4) {
+    scoreArea.innerHTML = "5/5正解！ 満点です！";
+  } else if (score == 4) {
     let scoreArea = document.getElementById("score-area");
-    scoreArea.innerHTML = "惜しい！";
+    scoreArea.innerHTML = "5/4正解！　惜しい！";
+  } else if (score == 3) {
+    let scoreArea = document.getElementById("score-area");
+    scoreArea.innerHTML = "5/3正解！　あとちょっと！";
+  } else if (score == 2) {
+    let scoreArea = document.getElementById("score-area");
+    scoreArea.innerHTML = "5/2正解！　ちょっと頑張ろう！";
+  } else if (score == 1) {
+    let scoreArea = document.getElementById("score-area");
+    scoreArea.innerHTML = "5/1正解！　がんばりましょう、、、！";
   } else {
     let scoreArea = document.getElementById("score-area");
-    scoreArea.innerHTML = "がんばりましょう、、、";
+    scoreArea.innerHTML = "5/0　ぴえん、、、";
   }
 
 };
